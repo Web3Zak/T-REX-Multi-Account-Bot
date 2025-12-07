@@ -2,11 +2,12 @@
     {
         "name": "Account1",
         "cookies": "cookies1.json",
-        "proxy": ""
+        "proxy": "socks5://user:pass@host:port"
     },
     {
         "name": "Account2",
         "cookies": "cookies2.json",
-        "proxy": ""
+        "proxy": "https://user:pass@host:port"
     }
 ]
+
