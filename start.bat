@@ -1,48 +1,60 @@
 @echo off
 title T-Rex Bot Launcher
 color 0A
+cls
 
-echo ============================================
-echo      Starting T-Rex BOT (Playwright)
-echo ============================================
+:: ======================================================
+::                    ASCII BANNER
+:: ======================================================
+echo.
+echo   ________________________________________________
+echo   |                                              |
+echo   |   T R E X   A U T O M A T I O N   B O T      |
+echo   |______________________________________________|
+echo.
+echo   Fast, stable and fully automated browser engine
+echo   ------------------------------------------------
 echo.
 
-REM --- проверяем Python ---
-echo Checking Python...
+echo [1] Checking Python...
 python --version >nul 2>&1
 IF %ERRORLEVEL% NEQ 0 (
-    echo [ERROR] Python не найден. Установите Python 3.10+ и добавьте его в PATH.
+    echo.
+    echo [ERROR] Python не найден!
+    echo Установите Python 3.10+ и добавьте его в PATH.
+    echo.
     pause
     exit /b
 )
+echo     → Python detected.
 
-REM --- проверяем requirements.txt ---
+echo.
+echo [2] Checking requirements.txt...
 IF NOT EXIST requirements.txt (
-    echo requirements.txt не найден!
-    echo Создайте файл requirements.txt со списком зависимостей.
+    echo.
+    echo [ERROR] requirements.txt не найден!
+    echo Создайте его со списком зависимостей.
+    echo.
     pause
     exit /b
 )
+echo     → File found.
 
-REM --- установка зависимостей ---
-echo Installing dependencies...
+echo.
+echo [3] Installing pip dependencies...
 pip install -r requirements.txt
 
-REM --- установка Playwright Chromium ---
-echo Installing Playwright Chromium (если необходимо)...
-python -m playwright install chromium
-
 echo.
-echo ============================================
-echo                 Launching
-echo ============================================
+echo ======================================================
+echo      L A U N C H I N G   T - R E X   B O T
+echo ======================================================
 echo.
 
-REM --- запуск основного скрипта ---
-python trex_daily_script.py
+python main_chrome_profiles.py
 
 echo.
-echo ============================================
-echo   Скрипт завершён. Нажмите любую клавишу.
-echo ============================================
-pause
+echo ======================================================
+echo                 SCRIPT FINISHED
+echo        Press any key to close this window...
+echo ======================================================
+pause >nul
