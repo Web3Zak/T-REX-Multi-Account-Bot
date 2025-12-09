@@ -1,13 +1,25 @@
 [
-    {
-        "name": "Account1",
-        "cookies": "cookies1.json",
-        "proxy": "socks5://user:pass@host:port"
-    },
-    {
-        "name": "Account2",
-        "cookies": "cookies2.json",
-        "proxy": "https://user:pass@host:port"
-    }
+  {
+    "name": "GoogleAuto",
+    "login_method": "google",
+    "remote_debugging_port": 9222,
+    "proxy": "",
+    "cookies": "",
+    "google_email": "ваш_емейл@gmail.com",
+    "google_password": "ваш_пароль"
+  },
+  {
+    "name": "TwitterAcc",
+    "login_method": "twitter",
+    "remote_debugging_port": 9223,
+    "proxy": "",
+    "cookies": "cookies/account1_cookies.json"
+  },
+  {
+    "name": "GoogleManual",
+    "login_method": "google",
+    "remote_debugging_port": 9224,
+    "proxy": "",
+    "cookies": ""
+  }
 ]
-
