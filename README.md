@@ -52,6 +52,7 @@
 Примеры:
 - Без прокси: `""`
 - HTTP-прокси: `"http://127.0.0.1:8080"`
+- socks5 c паролем: `"socks5://USERNAME:PASSWORD@HOST:PORT"`
 
 ### **cookies**
 Используются **только для Twitter**.
