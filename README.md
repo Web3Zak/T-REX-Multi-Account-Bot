@@ -18,7 +18,6 @@
 
 - Python 3.10+
 - Библиотека Playwright
-- JSON-файлы с cookies либо создание профилей в ручном формате
 
 ---
 
@@ -28,8 +27,4 @@
    [Скачать Python](https://www.python.org/downloads/)  
    **Важно:** отметить галочку *Add Python to PATH* при установке.
 
-2. Откройте папку со скриптом в терминале/PowerShell и установите зависимости:
-
-```bash
-pip install playwright==1.45.0
-playwright install chromium
+2. Запустите файл start.bat
