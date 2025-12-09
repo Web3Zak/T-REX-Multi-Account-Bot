@@ -79,4 +79,6 @@
    [Скачать Python](https://www.python.org/downloads/)  
    **Важно:** отметить галочку *Add Python to PATH* при установке.
 
-2. Запустите файл start.bat
+2. Настройте файл `accounts.json`
+
+3. Запустите файл start.bat
