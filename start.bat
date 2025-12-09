@@ -50,7 +50,7 @@ echo      L A U N C H I N G   T - R E X   B O T
 echo ======================================================
 echo.
 
-python main_chrome_profiles.py
+python trex_daily_script.py
 
 echo.
 echo ======================================================
