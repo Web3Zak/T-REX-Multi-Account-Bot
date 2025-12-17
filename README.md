@@ -49,10 +49,12 @@
 
 
 ### **adspower_profile_id**
-ID профиля ADS 
-
-Пример: k180ecpa
-
+ID профиля ADS:
+```
+k180ecpa
+kjf992c
+kj4lwgt
+```
 ### **login_method**
 Способ входа на сайт:
 
