@@ -47,6 +47,12 @@
 | `"ads"` | На ADS Browser |
 | `"chrome"` | На Chrome (не chromium ядро)  |
 
+
+### **adspower_profile_id**
+ID профиля ADS 
+
+Пример: k180ecpa
+
 ### **login_method**
 Способ входа на сайт:
 
