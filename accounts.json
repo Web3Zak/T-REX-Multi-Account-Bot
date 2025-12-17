@@ -1,25 +1,44 @@
 [
   {
-    "name": "GoogleAuto",
-    "login_method": "google",
+    "name": "ADS_Twitter_1",
+    "browser_mode": "ads",
+    "adspower_profile_id": "ваш_id",
+    "login_method": "twitter"
+  },
+
+  {
+    "name": "ADS_Google_1",
+    "browser_mode": "ads",
+    "adspower_profile_id": "ваш_id",
+    "login_method": "google"
+  },
+
+  {
+    "name": "Chrome_Google_Auto",
+    "browser_mode": "chrome",
+    "proxy": "",
     "remote_debugging_port": 9222,
-    "proxy": "",
-    "cookies": "",
-    "google_email": "ваш_емейл@gmail.com",
-    "google_password": "ваш_пароль"
-  },
-  {
-    "name": "TwitterAcc",
-    "login_method": "twitter",
-    "remote_debugging_port": 9223,
-    "proxy": "",
-    "cookies": "cookies/account1_cookies.json"
-  },
-  {
-    "name": "GoogleManual",
     "login_method": "google",
-    "remote_debugging_port": 9224,
+    "google_email": "example@gmail.com",
+    "google_password": "example_password"
+  },
+
+  {
+    "name": "Chrome_Google_Manual",
+    "browser_mode": "chrome",
     "proxy": "",
-    "cookies": ""
+    "remote_debugging_port": 9223,
+    "login_method": "google",
+    "google_email": "",
+    "google_password": ""
+  },
+
+  {
+    "name": "Chrome_Twitter_1",
+    "browser_mode": "chrome",
+    "proxy": "",
+    "remote_debugging_port": 9224,
+    "login_method": "twitter",
+    "cookies": "cookies/account1_cookies.json"
   }
 ]
